@@ -65,18 +65,18 @@ class Laptop {
                 color);
     }
 
-    // public boolean equals(Object obj) {
-    // if (this == obj) {
-    // return true;
-    // }
-    // if (obj == null || getClass() != obj.getClass()) {
-    // return false;
-    // }
-    // Laptop cat = (Laptop) obj;
-    // return firm.equals(cat.firm) && color.equals(cat.color)
-    // && processor.equals(cat.processor)
-    // && operatingSystem.equals(cat.operatingSystem);
-    // }
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        Laptop cat = (Laptop) obj;
+        return firm.equals(cat.firm) && color.equals(cat.color)
+                && processor.equals(cat.processor)
+                && operatingSystem.equals(cat.operatingSystem);
+    }
 
     @Override
     public int hashCode() {
